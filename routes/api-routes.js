@@ -1,4 +1,4 @@
-const Workout = requestuire("../models/workoutScript");
+const Workout = require("../models/workoutScript");
 module.exports = function (app) {
   app.get("/api/workouts", (req, res) => {
     Workout.find({})
